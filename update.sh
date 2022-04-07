@@ -36,7 +36,7 @@ function get_latest_release() {
     echo "$result"
 }
 
-REPO="Honey-Pi/rpi-scripts"
+REPO="dsgrafiniert/rpi-scripts"
 ScriptsTag=$(get_latest_release $REPO $STABLE)
 echo ">>> Install latest HoneyPi runtime measurement scripts ($ScriptsTag) from $REPO stable=$STABLE"
 if [ ! -z "$ScriptsTag" ]; then
